@@ -27,6 +27,16 @@ mkdir -p ~/.claude/skills
 cp -r craft-response-skill/craft-response ~/.claude/skills/craft-response
 ```
 
+**Optional: customize your voice**
+
+```bash
+cp ~/.claude/skills/craft-response/customization.example.md \
+   ~/.claude/skills/craft-response/customization.md
+# edit customization.md — name, sign-offs, tone rules, dropslop link, business context
+```
+
+The skill uses `customization.md` when present. Without it, the agent infers your voice from your rules and session context and falls back to sensible defaults.
+
 ## Use
 
 Copy the thread you're answering, then:
@@ -51,6 +61,7 @@ cd /path/to/craft-response-skill
 git pull
 rm -rf ~/.claude/skills/craft-response
 cp -r craft-response ~/.claude/skills/craft-response
+# re-copy customization.md if you created one locally (it is not in the repo)
 ```
 
 ## Notes
