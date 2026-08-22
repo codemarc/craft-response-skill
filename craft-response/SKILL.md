@@ -1,6 +1,6 @@
 ---
 name: craft-response
-description: Read the message the user needs to answer (clipboard, pasted text, or this conversation), draft their response in their voice, and copy it to the macOS clipboard so they can paste it anywhere. Trigger: /craft-response, or when the user says "craft my response", "draft my reply", "write my response and copy it", or "dropslop".
+description: Read the message the user needs to answer (clipboard, pasted text, or this conversation), draft their response in their voice, and copy it to the macOS clipboard so they can paste it anywhere. Trigger: /craft-response, or when the user says "craft my response", "draft my reply", "write my response and copy it", or "stopslop".
 ---
 
 # Craft Response
@@ -32,7 +32,7 @@ See `customization.example.md` in this directory for a template you can copy to 
    - Match the medium: email gets a greeting and sign-off; chat/SMS gets neither. LinkedIn and similar platforms get a first-name greeting and the user's name on sign-off unless their rules say otherwise.
    - Keep it tight. Say the thing, stop.
 
-   **Dropslop mode.** If the user invokes with "dropslop" (or `/craft-response dropslop`), skip diplomacy. The reply's whole job is to call out AI slop, tell them to clean it up and resend, and share any fix link from `customization.md`. A few lines max. No engagement with the pitch content itself. If no customization defines dropslop behavior, name the slop plainly, ask them to rewrite and resend, and keep it short.
+   **stopslop mode.** If the user invokes with "stopslop" (or `/craft-response stopslop`), skip diplomacy. The reply's whole job is to call out AI slop, tell them to clean it up and resend, and share any fix link from `customization.md`. A few lines max. No engagement with the pitch content itself. If no customization defines stopslop behavior, name the slop plainly, ask them to rewrite and resend, and keep it short.
 
 4. **Copy to clipboard.** Write the draft to a file in the scratchpad, then:
    ```bash

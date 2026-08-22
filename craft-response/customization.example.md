@@ -26,9 +26,9 @@ Vendor pitches and cold outreach get the burden-shift treatment: no call until t
 
 When the other party's writing is AI slop, it is in character to call it out and point them at the solid skill: https://github.com/codemarc/solid-skill
 
-## Dropslop mode
+## stopslop mode
 
-When invoked with "dropslop" or `/craft-response dropslop`:
+When invoked with "stopslop" or `/craft-response stopslop`:
 
 - Skip diplomacy entirely.
 - Name the slop (word salad, word vomit, AI slop).
